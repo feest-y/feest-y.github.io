@@ -1,0 +1,14 @@
+var x1, x2, x3, y1, y2, y3, s, p2, p, a, b, c;
+x1 = parseInt(prompt(x1, "x1"));
+y1 = parseInt(prompt(y1, "y1"));
+x2 = parseInt(prompt(x2, "x2"));
+y2 = parseInt(prompt(y2, "y2"));
+x3 = parseInt(prompt(x3, "x3"));
+y3 = parseInt(prompt(y3, "y3"));
+a = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+b = Math.sqrt(Math.pow((x3 - x2), 2) + Math.pow((y3 - y2), 2));
+c = Math.sqrt(Math.pow((x1 - x3), 2) + Math.pow((y1 - y3), 2));
+p2 = a + b + c;
+p = p2 / 2;
+s = Math.sqrt(p*(p - a) * (p - b) * (p - c));
+document.write("<p>","P=",p2,"<br/>","S=",s,"</p>");
